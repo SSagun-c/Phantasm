@@ -15,6 +15,7 @@ class Anime(commands.Cog):
         embed = discord.Embed(title=f"Anime: {aqjson['anime']}", description=f"Character: {aqjson['character']}", color=0xED61D3)
         embed.add_field(name="Quote", value=aqjson['quote'])
         await ctx.send(embed=embed)
+        await Session.close()
 
 def setup(bot):
     bot.add_cog(Anime(bot))
