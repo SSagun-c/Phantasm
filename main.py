@@ -4,7 +4,7 @@ import os
 from discord import Intents
 from discord.ext import commands
 
-token = 'ODM0ODA5ODczNjM1MjEzMzUy.YIGTRw.x45N7EuinFZh3-ar9ywpRJdFRvo'
+token = os.getenv('DISCORD_TOKEN')
 client = commands.Bot(command_prefix='-', intents=Intents.all(), case_insensitive=True)
 client.remove_command('help')
 
