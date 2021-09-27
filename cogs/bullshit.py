@@ -10,8 +10,6 @@ class Bullshit(commands.Cog):
     async def on_message(self, message):
         if message.content.lower() == 'owo':
             await message.channel.send('What\'s this?')
-
-        await self.bot.process_commands(message)
     
 def setup(bot):
     bot.add_cog(Bullshit(bot))
