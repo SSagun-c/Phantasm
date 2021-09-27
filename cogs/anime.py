@@ -8,7 +8,6 @@ class Anime(commands.Cog):
         self.bot = bot
 
     @commands.command(name="quote", aliases=["zitat"])
-    @commands.cooldown(1, 10, commands.BucketType.user)
     async def anime_quote(self, ctx):
         async with aiohttp.ClientSession() as Session:
             request = await Session.get('https://animechan.vercel.app/api/random')
