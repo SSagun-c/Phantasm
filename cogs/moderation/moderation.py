@@ -6,8 +6,8 @@ class Reviver(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name='delete-channel', help='delete a channel with the specified name')
-    async def delete_channel(ctx, channel_name):
+    @commands.command()
+    async def delete(ctx, channel_name):
         # check if the channel exists
         existing_channel = discord.utils.get(guild.channels, name=channel_name)
         
