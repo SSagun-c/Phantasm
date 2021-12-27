@@ -13,7 +13,7 @@ class Welcome(commands.Cog):
 
     @commands.Cog.listener()
     async def on_member_join(self, member: discord.Member):
-        channel = self.bot.get_channel(830191546283327500)
+        channel = self.bot.get_channel(901221349450735616)
 
         if not channel:
             return

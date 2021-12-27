@@ -17,7 +17,7 @@ async def on_ready():      # Changes bots Activity status on discord
 
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
-        client.load_extension(f'cogs.{filename[:-3]}')#
+        client.load_extension(f'cogs.{filename[:-3]}')
     else:
         print(f'Unable to load {filename[:-3]}')
 
